@@ -1,7 +1,7 @@
 """CLI.
 
   di run <agent> --input data.json [--out report.md] [--dry-run]
-  di run-dir <agent> [--input-dir data/raw] [--out-dir outputs] [--overwrite] [--dry-run]
+  di run-dir <agent> [--input-dir data/raw/<agent>] [--out-dir outputs/<agent>] [--overwrite] [--dry-run]
 """
 
 from __future__ import annotations
@@ -25,8 +25,8 @@ def main(argv: list[str] | None = None) -> int:
 
     d = sub.add_parser("run-dir", help="vyhodnotí všechny vstupy (*.json, *.txt) ve složce")
     d.add_argument("agent")
-    d.add_argument("--input-dir", type=Path, default=Path("data/raw"))
-    d.add_argument("--out-dir", type=Path, default=Path("outputs"))
+    d.add_argument("--input-dir", type=Path, help="výchozí: data/raw/<agent>")
+    d.add_argument("--out-dir", type=Path, help="výchozí: outputs/<agent>")
     d.add_argument("--overwrite", action="store_true", help="přepíše existující výstupy")
     d.add_argument("--dry-run", action="store_true", help="jen zvaliduje a sestaví prompty, nevolá model")
 
@@ -44,7 +44,11 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     res = run_dir(
-        args.agent, args.input_dir, args.out_dir, dry_run=args.dry_run, overwrite=args.overwrite
+        args.agent,
+        args.input_dir or Path("data/raw") / args.agent,
+        args.out_dir or Path("outputs") / args.agent,
+        dry_run=args.dry_run,
+        overwrite=args.overwrite,
     )
     print(f"\nHotovo: {len(res.ok)} OK, {len(res.skipped)} přeskočeno, {len(res.failed)} chyb")
     return 1 if res.failed else 0

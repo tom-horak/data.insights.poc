@@ -1,0 +1,11 @@
+thresholds:
+  cf_equal_max: 5          # rozdíl cf <= 5 => žádné tvrzení o převaze ve střelách
+  dominance_cf_min: 20     # "dominance" jen při rozdílu cf > 20
+  dominance_xgf_min: 1.5   # nebo při rozdílu xgf > 1.5
+  late_game_from_sec: 3300 # gól od 55:00 je pozdní
+  regulation_sec: 3600
+
+output:
+  summary_max_words: 25
+  factor_max_words: 20
+  factors_count: 3

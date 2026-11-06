@@ -77,16 +77,30 @@ def render(template: str, variables: dict) -> str:
     return re.sub(r"\{\{\s*([\w.]+)\s*\}\}", sub, template)
 
 
+def _resolve(ref, data: dict, config: dict):
+    """`data.a.b` / `config.a.b` se přeloží na hodnotu, cokoli jiného je literál."""
+    if not isinstance(ref, str) or not ref.startswith(("data.", "config.")):
+        return ref
+    root_name, *path = ref.split(".")
+    node = data if root_name == "data" else config
+    for key in path:
+        if not isinstance(node, dict) or key not in node:
+            raise KeyError(f"Proměnná '{ref}' nenalezena (chybí '{key}')")
+        node = node[key]
+    return node
+
+
 def build_prompt(agent: Agent, data: dict) -> tuple[str, str]:
-    """Vrátí (system_prompt, user_message)."""
+    """Vrátí (system_prompt, user_message).
+
+    Proměnné promptu se berou ze sekce `variables` v agent.yaml; hodnoty `data.*` / `config.*`
+    se dosadí ze vstupu a configu. Navíc je vždy k dispozici `facts` (výstup preprocesorů).
+    """
     facts = run_preprocessors(agent, data)
     variables = {
-        "league_teams": agent.config.get("league", {}).get("teams", ""),
-        "last_n_games": agent.config.get("form", {}).get("last_n_games", 5),
-        "team_name": data["team_name"],
-        "opponent_name": data["opp_name"],
-        "facts": facts,
+        name: _resolve(ref, data, agent.config) for name, ref in agent.spec.get("variables", {}).items()
     }
+    variables["facts"] = facts
     system = render(agent.system_prompt, variables) + "\n\n---\n" + render(agent.output_template, variables)
-    user = "### VSTUPNÍ DATA JSON:\n" + json.dumps(data, ensure_ascii=False)
+    user = agent.spec.get("user_prefix", "### INPUT DATA JSON:\n") + json.dumps(data, ensure_ascii=False)
     return system, user

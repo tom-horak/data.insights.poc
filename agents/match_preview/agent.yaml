@@ -12,6 +12,15 @@ prompts:
 
 input_schema: schemas/input.schema.json
 
+# proměnné promptu ({{nazev}}): data.* ze vstupu, config.* z config.yaml, jinak literál
+variables:
+  league_teams: config.league.teams
+  last_n_games: config.form.last_n_games
+  team_name: data.team_name
+  opponent_name: data.opp_name
+
+user_prefix: "### VSTUPNÍ DATA JSON:\n"
+
 # deterministické předzpracování; výsledek jde do promptu jako {{facts}}
 preprocessors:
   - skill: standings-alert

@@ -1,0 +1,30 @@
+{
+  "match_date": "2026-10-18",
+  "home_team": "HC Gamma",
+  "away_team": "HC Delta",
+  "final_score": "4:1",
+  "match_goals": [
+    { "time": "05:20", "team": "HC Gamma", "player_name": "Hráč G1" },
+    { "time": "18:44", "team": "HC Gamma", "player_name": "Hráč G2" },
+    { "time": "33:02", "team": "HC Delta", "player_name": "Hráč D1" },
+    { "time": "44:10", "team": "HC Gamma", "player_name": "Hráč G3" },
+    { "time": "56:15", "team": "HC Gamma", "player_name": "Hráč G4" }
+  ],
+  "metrics_5_on_5": [
+    { "metric": "gf", "HC Gamma": 3, "HC Delta": 1 },
+    { "metric": "xgf", "HC Gamma": 3.9, "HC Delta": 1.8 },
+    { "metric": "cf", "HC Gamma": 68, "HC Delta": 41 },
+    { "metric": "hd.cf", "HC Gamma": 9, "HC Delta": 3 },
+    { "metric": "r.cf", "HC Gamma": 20, "HC Delta": 11 },
+    { "metric": "o.cf", "HC Gamma": 5, "HC Delta": 1 },
+    { "metric": "f.cf", "HC Gamma": 24, "HC Delta": 12 },
+    { "metric": "l.cf", "HC Gamma": 19, "HC Delta": 17 }
+  ],
+  "metrics_power_play": [
+    { "metric": "gf", "HC Gamma": 1, "HC Delta": 0 },
+    { "metric": "xgf", "HC Gamma": 0.6, "HC Delta": 0.2 },
+    { "metric": "cf", "HC Gamma": 6, "HC Delta": 3 },
+    { "metric": "hd.cf", "HC Gamma": 1, "HC Delta": 0 },
+    { "metric": "toi", "HC Gamma": 122, "HC Delta": 125 }
+  ]
+}

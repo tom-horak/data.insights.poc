@@ -9,7 +9,7 @@ from di.validate import validate_input
 
 ROOT = Path(__file__).parents[1]
 EXAMPLES = ROOT / "agents/match_preview/examples"
-RAW = ROOT / "data/raw"  # reálná data, gitignored
+RAW = ROOT / "data/raw/match_preview"  # reálná data, gitignored
 
 
 def _data(name: str) -> dict:
@@ -71,7 +71,7 @@ def test_run_dir_empty_folder_raises(tmp_path):
 
 
 # Reálná data: spustí se jen pokud jsou ve složce data/raw (lokálně), jinak se přeskočí.
-@pytest.mark.skipif(not find_inputs(RAW), reason="data/raw je prázdné")
+@pytest.mark.skipif(not find_inputs(RAW), reason="data/raw/match_preview je prázdné")
 @pytest.mark.parametrize("path", find_inputs(RAW), ids=lambda p: p.name)
 def test_real_data_is_valid_and_processable(path):
     agent = load_agent("match_preview")
