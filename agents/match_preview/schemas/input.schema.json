@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "match_preview input",
+  "description": "Formát payloadu z Hockey Logic chatbota (viz examples/preview_*.json). Čísla v league_standings jsou řetězce.",
+  "type": "object",
+  "required": ["team_name", "opp_name", "team_overview", "opp_overview", "league_standings", "team_games", "opp_games"],
+  "$defs": {
+    "overview": {
+      "type": "array",
+      "description": "Makro metriky týmu; `order` je pořadí v lize (1 = nejlepší).",
+      "items": {
+        "type": "object",
+        "required": ["metric", "metricsValue", "order"],
+        "properties": {
+          "metric": { "type": "string" },
+          "metricsValue": { "type": "number" },
+          "order": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "games": {
+      "type": "array",
+      "description": "Posledních N zápasů týmu, od nejnovějšího.",
+      "items": {
+        "type": "object",
+        "required": ["matchInfo", "stats", "statsSpecialTeams", "goalkeepers", "forwards", "defencemen"],
+        "properties": {
+          "matchInfo": {
+            "type": "object",
+            "required": ["matchDate", "homeTeam", "awayTeam", "score"]
+          },
+          "stats": { "type": "array" },
+          "statsSpecialTeams": { "type": "array" },
+          "goalkeepers": { "type": "array" },
+          "forwards": { "type": "array" },
+          "defencemen": { "type": "array" }
+        }
+      }
+    }
+  },
+  "properties": {
+    "team_name": { "type": "string" },
+    "opp_name": { "type": "string" },
+    "team_overview": { "$ref": "#/$defs/overview" },
+    "opp_overview": { "$ref": "#/$defs/overview" },
+    "league_standings": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["team_name", "order", "PTS", "GP", "GF", "GA"],
+        "properties": {
+          "team_name": { "type": "string" },
+          "order": { "type": "string", "pattern": "^[0-9]+$" },
+          "PTS": { "type": "string", "pattern": "^[0-9]+$" },
+          "GP": { "type": "string", "pattern": "^[0-9]+$" },
+          "GF": { "type": "string", "pattern": "^[0-9]+$" },
+          "GA": { "type": "string", "pattern": "^[0-9]+$" }
+        }
+      }
+    },
+    "team_games": { "$ref": "#/$defs/games" },
+    "opp_games": { "$ref": "#/$defs/games" }
+  }
+}

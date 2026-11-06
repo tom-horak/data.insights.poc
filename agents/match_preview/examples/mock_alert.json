@@ -1,0 +1,1366 @@
+{
+  "team_name": "HC Delta",
+  "opp_name": "HC Epsilon",
+  "team_overview": [
+    {
+      "metric": "gf60",
+      "metricsValue": 1.56,
+      "order": 14
+    },
+    {
+      "metric": "ga60",
+      "metricsValue": 2.36,
+      "order": 2
+    },
+    {
+      "metric": "sh_ga60",
+      "metricsValue": 5.3,
+      "order": 8
+    },
+    {
+      "metric": "pp_gf60",
+      "metricsValue": 7.04,
+      "order": 8
+    },
+    {
+      "metric": "gsax",
+      "metricsValue": 7.94,
+      "order": 13
+    },
+    {
+      "metric": "form",
+      "metricsValue": 4,
+      "order": 2
+    }
+  ],
+  "opp_overview": [
+    {
+      "metric": "gf60",
+      "metricsValue": 1.99,
+      "order": 14
+    },
+    {
+      "metric": "ga60",
+      "metricsValue": 1.87,
+      "order": 10
+    },
+    {
+      "metric": "sh_ga60",
+      "metricsValue": 9.86,
+      "order": 1
+    },
+    {
+      "metric": "pp_gf60",
+      "metricsValue": 6.78,
+      "order": 5
+    },
+    {
+      "metric": "gsax",
+      "metricsValue": 9.76,
+      "order": 4
+    },
+    {
+      "metric": "form",
+      "metricsValue": 10,
+      "order": 2
+    }
+  ],
+  "league_standings": [
+    {
+      "team_name": "HC Alfa",
+      "order": "1",
+      "PTS": "42",
+      "GP": "17",
+      "GF": "61",
+      "GA": "37"
+    },
+    {
+      "team_name": "HC Beta",
+      "order": "2",
+      "PTS": "36",
+      "GP": "17",
+      "GF": "59",
+      "GA": "39"
+    },
+    {
+      "team_name": "HC Gamma",
+      "order": "3",
+      "PTS": "30",
+      "GP": "17",
+      "GF": "57",
+      "GA": "41"
+    },
+    {
+      "team_name": "HC Delta",
+      "order": "4",
+      "PTS": "28",
+      "GP": "17",
+      "GF": "55",
+      "GA": "43"
+    },
+    {
+      "team_name": "HC Epsilon",
+      "order": "5",
+      "PTS": "26",
+      "GP": "17",
+      "GF": "53",
+      "GA": "45"
+    },
+    {
+      "team_name": "HC Zeta",
+      "order": "6",
+      "PTS": "22",
+      "GP": "17",
+      "GF": "51",
+      "GA": "47"
+    },
+    {
+      "team_name": "HC Eta",
+      "order": "7",
+      "PTS": "20",
+      "GP": "17",
+      "GF": "49",
+      "GA": "49"
+    },
+    {
+      "team_name": "HC Theta",
+      "order": "8",
+      "PTS": "18",
+      "GP": "17",
+      "GF": "47",
+      "GA": "51"
+    },
+    {
+      "team_name": "HC Iota",
+      "order": "9",
+      "PTS": "16",
+      "GP": "17",
+      "GF": "45",
+      "GA": "53"
+    },
+    {
+      "team_name": "HC Kappa",
+      "order": "10",
+      "PTS": "14",
+      "GP": "17",
+      "GF": "43",
+      "GA": "55"
+    },
+    {
+      "team_name": "HC Lambda",
+      "order": "11",
+      "PTS": "12",
+      "GP": "17",
+      "GF": "41",
+      "GA": "57"
+    },
+    {
+      "team_name": "HC Mí",
+      "order": "12",
+      "PTS": "10",
+      "GP": "17",
+      "GF": "39",
+      "GA": "59"
+    },
+    {
+      "team_name": "HC Ný",
+      "order": "13",
+      "PTS": "8",
+      "GP": "17",
+      "GF": "37",
+      "GA": "61"
+    },
+    {
+      "team_name": "HC Ksí",
+      "order": "14",
+      "PTS": "5",
+      "GP": "17",
+      "GF": "35",
+      "GA": "63"
+    }
+  ],
+  "team_games": [
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-31",
+        "homeTeam": "HC Alfa",
+        "awayTeam": "HC Delta",
+        "score": "0:1"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 64,
+          "away": 53
+        },
+        {
+          "metric": "xG",
+          "home": 1.09,
+          "away": 2.89
+        },
+        {
+          "metric": "expectedWin",
+          "home": 27.3869,
+          "away": 72.6131
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "11.63",
+          "xGA/60": "2.18"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "0.79",
+          "xGA/60": "9.16"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "A Brankář",
+          "GA": "0",
+          "GSAx": "1.79"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "A Hráč 4",
+          "C": "A Hráč 5",
+          "LW": "A Hráč 6",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 31.16
+        },
+        {
+          "line": "2",
+          "RW": "A Hráč 7",
+          "C": "A Hráč 8",
+          "LW": "A Hráč 9",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 81.66
+        },
+        {
+          "line": "3",
+          "RW": "A Hráč 10",
+          "C": "A Hráč 11",
+          "LW": "A Hráč 12",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 73.63
+        },
+        {
+          "line": "4",
+          "RW": "A Hráč 13",
+          "C": "A Hráč 14",
+          "LW": "A Hráč 15",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 59.05
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "A Hráč 4",
+          "RD": "A Hráč 5",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 67.02
+        },
+        {
+          "line": "2",
+          "LD": "A Hráč 7",
+          "RD": "A Hráč 8",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 36.24
+        },
+        {
+          "line": "3",
+          "LD": "A Hráč 10",
+          "RD": "A Hráč 11",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 56.23
+        }
+      ]
+    },
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-28",
+        "homeTeam": "HC Delta",
+        "awayTeam": "HC Beta",
+        "score": "1:5"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 51,
+          "away": 63
+        },
+        {
+          "metric": "xG",
+          "home": 3.79,
+          "away": 2.45
+        },
+        {
+          "metric": "expectedWin",
+          "home": 60.7372,
+          "away": 39.2628
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "6.59",
+          "xGA/60": "2.11"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "1.01",
+          "xGA/60": "4.5"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "A Brankář",
+          "GA": "5",
+          "GSAx": "0.04"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "A Hráč 4",
+          "C": "A Hráč 5",
+          "LW": "A Hráč 6",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 51.47
+        },
+        {
+          "line": "2",
+          "RW": "A Hráč 7",
+          "C": "A Hráč 8",
+          "LW": "A Hráč 9",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 49.28
+        },
+        {
+          "line": "3",
+          "RW": "A Hráč 10",
+          "C": "A Hráč 11",
+          "LW": "A Hráč 12",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 18.04
+        },
+        {
+          "line": "4",
+          "RW": "A Hráč 13",
+          "C": "A Hráč 14",
+          "LW": "A Hráč 15",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 26.8
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "A Hráč 4",
+          "RD": "A Hráč 5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 68.94
+        },
+        {
+          "line": "2",
+          "LD": "A Hráč 7",
+          "RD": "A Hráč 8",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 50.96
+        },
+        {
+          "line": "3",
+          "LD": "A Hráč 10",
+          "RD": "A Hráč 11",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 78.68
+        }
+      ]
+    },
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-25",
+        "homeTeam": "HC Gamma",
+        "awayTeam": "HC Delta",
+        "score": "5:4"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 72,
+          "away": 48
+        },
+        {
+          "metric": "xG",
+          "home": 1.02,
+          "away": 3.74
+        },
+        {
+          "metric": "expectedWin",
+          "home": 21.4286,
+          "away": 78.5714
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "6.22",
+          "xGA/60": "1.68"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "0.64",
+          "xGA/60": "0.67"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "A Brankář",
+          "GA": "5",
+          "GSAx": "1.55"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "A Hráč 4",
+          "C": "A Hráč 5",
+          "LW": "A Hráč 6",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 48.94
+        },
+        {
+          "line": "2",
+          "RW": "A Hráč 7",
+          "C": "A Hráč 8",
+          "LW": "A Hráč 9",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 39.23
+        },
+        {
+          "line": "3",
+          "RW": "A Hráč 10",
+          "C": "A Hráč 11",
+          "LW": "A Hráč 12",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 56.99
+        },
+        {
+          "line": "4",
+          "RW": "A Hráč 13",
+          "C": "A Hráč 14",
+          "LW": "A Hráč 15",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 53.55
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "A Hráč 4",
+          "RD": "A Hráč 5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 70.89
+        },
+        {
+          "line": "2",
+          "LD": "A Hráč 7",
+          "RD": "A Hráč 8",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 73.92
+        },
+        {
+          "line": "3",
+          "LD": "A Hráč 10",
+          "RD": "A Hráč 11",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 75.77
+        }
+      ]
+    },
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-22",
+        "homeTeam": "HC Delta",
+        "awayTeam": "HC Zeta",
+        "score": "2:1"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 51,
+          "away": 62
+        },
+        {
+          "metric": "xG",
+          "home": 1.94,
+          "away": 3.79
+        },
+        {
+          "metric": "expectedWin",
+          "home": 33.8569,
+          "away": 66.1431
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "3.48",
+          "xGA/60": "0.5"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "0.38",
+          "xGA/60": "11.42"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "A Brankář",
+          "GA": "1",
+          "GSAx": "0.8"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "A Hráč 4",
+          "C": "A Hráč 5",
+          "LW": "A Hráč 6",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 64.18
+        },
+        {
+          "line": "2",
+          "RW": "A Hráč 7",
+          "C": "A Hráč 8",
+          "LW": "A Hráč 9",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 22.99
+        },
+        {
+          "line": "3",
+          "RW": "A Hráč 10",
+          "C": "A Hráč 11",
+          "LW": "A Hráč 12",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 39.03
+        },
+        {
+          "line": "4",
+          "RW": "A Hráč 13",
+          "C": "A Hráč 14",
+          "LW": "A Hráč 15",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 22.61
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "A Hráč 4",
+          "RD": "A Hráč 5",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 72.19
+        },
+        {
+          "line": "2",
+          "LD": "A Hráč 7",
+          "RD": "A Hráč 8",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 16.25
+        },
+        {
+          "line": "3",
+          "LD": "A Hráč 10",
+          "RD": "A Hráč 11",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 65.32
+        }
+      ]
+    },
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-19",
+        "homeTeam": "HC Delta",
+        "awayTeam": "HC Eta",
+        "score": "5:4"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 54,
+          "away": 73
+        },
+        {
+          "metric": "xG",
+          "home": 3.37,
+          "away": 2.91
+        },
+        {
+          "metric": "expectedWin",
+          "home": 53.6624,
+          "away": 46.3376
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "5.41",
+          "xGA/60": "1.57"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "0.05",
+          "xGA/60": "8.1"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "A Brankář",
+          "GA": "4",
+          "GSAx": "1.31"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "A Hráč 4",
+          "C": "A Hráč 5",
+          "LW": "A Hráč 6",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 66.62
+        },
+        {
+          "line": "2",
+          "RW": "A Hráč 7",
+          "C": "A Hráč 8",
+          "LW": "A Hráč 9",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 76.29
+        },
+        {
+          "line": "3",
+          "RW": "A Hráč 10",
+          "C": "A Hráč 11",
+          "LW": "A Hráč 12",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 75.1
+        },
+        {
+          "line": "4",
+          "RW": "A Hráč 13",
+          "C": "A Hráč 14",
+          "LW": "A Hráč 15",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 67.07
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "A Hráč 4",
+          "RD": "A Hráč 5",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 24.13
+        },
+        {
+          "line": "2",
+          "LD": "A Hráč 7",
+          "RD": "A Hráč 8",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 82.35
+        },
+        {
+          "line": "3",
+          "LD": "A Hráč 10",
+          "RD": "A Hráč 11",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 72.95
+        }
+      ]
+    }
+  ],
+  "opp_games": [
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-31",
+        "homeTeam": "HC Alfa",
+        "awayTeam": "HC Epsilon",
+        "score": "4:5"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 62,
+          "away": 46
+        },
+        {
+          "metric": "xG",
+          "home": 2.78,
+          "away": 2.32
+        },
+        {
+          "metric": "expectedWin",
+          "home": 54.5098,
+          "away": 45.4902
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "2.47",
+          "xGA/60": "2.02"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "0.65",
+          "xGA/60": "2.33"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "B Brankář",
+          "GA": "4",
+          "GSAx": "-1.13"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "B Hráč 4",
+          "C": "B Hráč 5",
+          "LW": "B Hráč 6",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 50.29
+        },
+        {
+          "line": "2",
+          "RW": "B Hráč 7",
+          "C": "B Hráč 8",
+          "LW": "B Hráč 9",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 57.85
+        },
+        {
+          "line": "3",
+          "RW": "B Hráč 10",
+          "C": "B Hráč 11",
+          "LW": "B Hráč 12",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 16.27
+        },
+        {
+          "line": "4",
+          "RW": "B Hráč 13",
+          "C": "B Hráč 14",
+          "LW": "B Hráč 15",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 71.78
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "B Hráč 4",
+          "RD": "B Hráč 5",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 45.05
+        },
+        {
+          "line": "2",
+          "LD": "B Hráč 7",
+          "RD": "B Hráč 8",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 73.64
+        },
+        {
+          "line": "3",
+          "LD": "B Hráč 10",
+          "RD": "B Hráč 11",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 68.76
+        }
+      ]
+    },
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-28",
+        "homeTeam": "HC Beta",
+        "awayTeam": "HC Epsilon",
+        "score": "5:0"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 50,
+          "away": 74
+        },
+        {
+          "metric": "xG",
+          "home": 1.14,
+          "away": 1.47
+        },
+        {
+          "metric": "expectedWin",
+          "home": 43.6782,
+          "away": 56.3218
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "2.56",
+          "xGA/60": "2.28"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "0.9",
+          "xGA/60": "10.09"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "B Brankář",
+          "GA": "5",
+          "GSAx": "-0.21"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "B Hráč 4",
+          "C": "B Hráč 5",
+          "LW": "B Hráč 6",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 35.39
+        },
+        {
+          "line": "2",
+          "RW": "B Hráč 7",
+          "C": "B Hráč 8",
+          "LW": "B Hráč 9",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 55.6
+        },
+        {
+          "line": "3",
+          "RW": "B Hráč 10",
+          "C": "B Hráč 11",
+          "LW": "B Hráč 12",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 17.74
+        },
+        {
+          "line": "4",
+          "RW": "B Hráč 13",
+          "C": "B Hráč 14",
+          "LW": "B Hráč 15",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 75.63
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "B Hráč 4",
+          "RD": "B Hráč 5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 38.86
+        },
+        {
+          "line": "2",
+          "LD": "B Hráč 7",
+          "RD": "B Hráč 8",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 54.95
+        },
+        {
+          "line": "3",
+          "LD": "B Hráč 10",
+          "RD": "B Hráč 11",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 81.66
+        }
+      ]
+    },
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-25",
+        "homeTeam": "HC Epsilon",
+        "awayTeam": "HC Gamma",
+        "score": "2:4"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 57,
+          "away": 46
+        },
+        {
+          "metric": "xG",
+          "home": 2.87,
+          "away": 1.4
+        },
+        {
+          "metric": "expectedWin",
+          "home": 67.2131,
+          "away": 32.7869
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "9.44",
+          "xGA/60": "2.48"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "0.02",
+          "xGA/60": "8.04"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "B Brankář",
+          "GA": "4",
+          "GSAx": "-1.18"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "B Hráč 4",
+          "C": "B Hráč 5",
+          "LW": "B Hráč 6",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 28.15
+        },
+        {
+          "line": "2",
+          "RW": "B Hráč 7",
+          "C": "B Hráč 8",
+          "LW": "B Hráč 9",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 23.09
+        },
+        {
+          "line": "3",
+          "RW": "B Hráč 10",
+          "C": "B Hráč 11",
+          "LW": "B Hráč 12",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 26.13
+        },
+        {
+          "line": "4",
+          "RW": "B Hráč 13",
+          "C": "B Hráč 14",
+          "LW": "B Hráč 15",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 78.75
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "B Hráč 4",
+          "RD": "B Hráč 5",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 53.51
+        },
+        {
+          "line": "2",
+          "LD": "B Hráč 7",
+          "RD": "B Hráč 8",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 22.01
+        },
+        {
+          "line": "3",
+          "LD": "B Hráč 10",
+          "RD": "B Hráč 11",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 16.91
+        }
+      ]
+    },
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-22",
+        "homeTeam": "HC Zeta",
+        "awayTeam": "HC Epsilon",
+        "score": "5:2"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 60,
+          "away": 65
+        },
+        {
+          "metric": "xG",
+          "home": 3.09,
+          "away": 2.57
+        },
+        {
+          "metric": "expectedWin",
+          "home": 54.5936,
+          "away": 45.4064
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "0.76",
+          "xGA/60": "2.74"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "1.45",
+          "xGA/60": "11.64"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "B Brankář",
+          "GA": "5",
+          "GSAx": "-1.11"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "B Hráč 4",
+          "C": "B Hráč 5",
+          "LW": "B Hráč 6",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 61.33
+        },
+        {
+          "line": "2",
+          "RW": "B Hráč 7",
+          "C": "B Hráč 8",
+          "LW": "B Hráč 9",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 52.91
+        },
+        {
+          "line": "3",
+          "RW": "B Hráč 10",
+          "C": "B Hráč 11",
+          "LW": "B Hráč 12",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 32.25
+        },
+        {
+          "line": "4",
+          "RW": "B Hráč 13",
+          "C": "B Hráč 14",
+          "LW": "B Hráč 15",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 21.26
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "B Hráč 4",
+          "RD": "B Hráč 5",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 60.64
+        },
+        {
+          "line": "2",
+          "LD": "B Hráč 7",
+          "RD": "B Hráč 8",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 42.33
+        },
+        {
+          "line": "3",
+          "LD": "B Hráč 10",
+          "RD": "B Hráč 11",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 37.91
+        }
+      ]
+    },
+    {
+      "matchInfo": {
+        "matchDate": "2026-10-19",
+        "homeTeam": "HC Epsilon",
+        "awayTeam": "HC Eta",
+        "score": "4:2"
+      },
+      "stats": [
+        {
+          "metric": "C",
+          "home": 45,
+          "away": 55
+        },
+        {
+          "metric": "xG",
+          "home": 1.86,
+          "away": 1.35
+        },
+        {
+          "metric": "expectedWin",
+          "home": 57.9439,
+          "away": 42.0561
+        }
+      ],
+      "statsSpecialTeams": [
+        {
+          "specialTeam": "powerPlay",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "2.64",
+          "xGA/60": "2.42"
+        },
+        {
+          "specialTeam": "shortHanded",
+          "GF": "0",
+          "GA": "0",
+          "xGF/60": "0.6",
+          "xGA/60": "3.22"
+        }
+      ],
+      "goalkeepers": [
+        {
+          "goalkeeper_name": "B Brankář",
+          "GA": "2",
+          "GSAx": "1.54"
+        }
+      ],
+      "forwards": [
+        {
+          "line": "1",
+          "RW": "B Hráč 4",
+          "C": "B Hráč 5",
+          "LW": "B Hráč 6",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 59.48
+        },
+        {
+          "line": "2",
+          "RW": "B Hráč 7",
+          "C": "B Hráč 8",
+          "LW": "B Hráč 9",
+          "GF": 1,
+          "GA": 1,
+          "xGF%": 49.53
+        },
+        {
+          "line": "3",
+          "RW": "B Hráč 10",
+          "C": "B Hráč 11",
+          "LW": "B Hráč 12",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 50.1
+        },
+        {
+          "line": "4",
+          "RW": "B Hráč 13",
+          "C": "B Hráč 14",
+          "LW": "B Hráč 15",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 50.65
+        },
+        {
+          "line": "5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 0
+        }
+      ],
+      "defencemen": [
+        {
+          "line": "1",
+          "LD": "B Hráč 4",
+          "RD": "B Hráč 5",
+          "GF": 0,
+          "GA": 0,
+          "xGF%": 69.33
+        },
+        {
+          "line": "2",
+          "LD": "B Hráč 7",
+          "RD": "B Hráč 8",
+          "GF": 0,
+          "GA": 1,
+          "xGF%": 36.39
+        },
+        {
+          "line": "3",
+          "LD": "B Hráč 10",
+          "RD": "B Hráč 11",
+          "GF": 1,
+          "GA": 0,
+          "xGF%": 77.56
+        }
+      ]
+    }
+  ]
+}
