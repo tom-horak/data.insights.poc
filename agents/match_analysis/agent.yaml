@@ -1,0 +1,31 @@
+name: match_analysis
+version: 0.1.0
+description: Dvojjazyčná (EN + CZ) pozápasová analýza z 5v5, přesilovkových metrik a průběhu gólů.
+model: claude-sonnet-5-5
+max_tokens: 2000
+temperature: 0.2
+language: en+cs
+
+prompts:
+  system: prompts/system.md
+  output_template: prompts/output_template.md
+
+input_schema: schemas/input.schema.json
+
+variables:
+  home_team: data.home_team
+  away_team: data.away_team
+  cf_equal_max: config.thresholds.cf_equal_max
+  dominance_cf_min: config.thresholds.dominance_cf_min
+  dominance_xgf_min: config.thresholds.dominance_xgf_min
+  summary_max_words: config.output.summary_max_words
+  factor_max_words: config.output.factor_max_words
+  factors_count: config.output.factors_count
+
+user_prefix: "### INPUT DATA JSON:\n"
+
+preprocessors:
+  - skill: match-facts
+    module: match_facts
+    function: compute
+    result_key: match_facts

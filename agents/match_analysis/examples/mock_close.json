@@ -1,0 +1,30 @@
+{
+  "match_date": "2026-10-15",
+  "home_team": "HC Alfa",
+  "away_team": "HC Beta",
+  "final_score": "3:2n",
+  "match_goals": [
+    { "time": "10:12", "team": "HC Beta", "player_name": "Hráč B1" },
+    { "time": "25:40", "team": "HC Alfa", "player_name": "Hráč A1" },
+    { "time": "41:05", "team": "HC Beta", "player_name": "Hráč B2" },
+    { "time": "58:30", "team": "HC Alfa", "player_name": "Hráč A2" },
+    { "time": "62:10", "team": "HC Alfa", "player_name": "Hráč A3" }
+  ],
+  "metrics_5_on_5": [
+    { "metric": "gf", "HC Alfa": 2, "HC Beta": 1 },
+    { "metric": "xgf", "HC Alfa": 2.1, "HC Beta": 1.9 },
+    { "metric": "cf", "HC Alfa": 45, "HC Beta": 42 },
+    { "metric": "hd.cf", "HC Alfa": 4, "HC Beta": 5 },
+    { "metric": "r.cf", "HC Alfa": 12, "HC Beta": 15 },
+    { "metric": "o.cf", "HC Alfa": 2, "HC Beta": 3 },
+    { "metric": "f.cf", "HC Alfa": 14, "HC Beta": 10 },
+    { "metric": "l.cf", "HC Alfa": 17, "HC Beta": 14 }
+  ],
+  "metrics_power_play": [
+    { "metric": "gf", "HC Alfa": 1, "HC Beta": 1 },
+    { "metric": "xgf", "HC Alfa": 0.9, "HC Beta": 0.4 },
+    { "metric": "cf", "HC Alfa": 9, "HC Beta": 5 },
+    { "metric": "hd.cf", "HC Alfa": 2, "HC Beta": 1 },
+    { "metric": "toi", "HC Alfa": 254, "HC Beta": 120 }
+  ]
+}

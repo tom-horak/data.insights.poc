@@ -25,24 +25,33 @@ di run match_preview --input agents/match_preview/examples/mock_alert.json --out
 
 ## Reálná data
 
-Reálné vstupy (`*.json` nebo `*.txt` z Hockey Logic chatbota) patří do `data/raw/`, které je gitignorované.
-Celou složku vyhodnotíš jedním příkazem, výstupy se uloží jako `outputs/<název>.md`:
+Reálné vstupy (`*.json` nebo `*.txt` z Hockey Logic chatbota) patří do `data/raw/<agent>/` (např.
+`data/raw/match_preview/`, `data/raw/match_analysis/`), které je gitignorované.
+Celou složku vyhodnotíš jedním příkazem, výstupy se uloží jako `outputs/<agent>/<název>.md`:
 
 ```bash
 di run-dir match_preview --dry-run          # jen validace a sestavení promptů, bez volání modelu
-di run-dir match_preview                    # ostrý běh nad data/raw, existující výstupy přeskočí
-di run-dir match_preview --overwrite        # přepíše existující výstupy
+di run-dir match_analysis                   # ostrý běh nad data/raw/match_analysis, existující výstupy přeskočí
+di run-dir match_analysis --overwrite       # přepíše existující výstupy
 di run-dir match_preview --input-dir D:\jina\slozka --out-dir D:\vystupy
 ```
+
+## Agenti
+
+| Agent | Účel | Předzpracování (skill) |
+|---|---|---|
+| `match_preview` | předzápasový skautský přehled (CZ) | `standings-alert` |
+| `match_analysis` | pozápasová analýza, EN + CZ | `match-facts` |
 
 Chyba v jednom souboru dávku nezastaví, na konci je souhrn. Testy nad `data/raw` se spustí jen
 tehdy, když tam nějaká data jsou.
 
 ## Mock data
 
-Vymyšlená data ve stejném formátu generuje `python scripts/make_mock_data.py` do
-`agents/match_preview/examples/` (`mock_alert.json` se spuštěným upozorněním na tabulku,
-`mock_no_alert.json` bez něj). Testy používají jen je.
+Vymyšlená data ve stejném formátu jsou v `agents/<agent>/examples/`. Pro `match_preview` je generuje
+`python scripts/make_mock_data.py` (`mock_alert.json` se spuštěným upozorněním na tabulku,
+`mock_no_alert.json` bez něj), pro `match_analysis` jsou ručně psané (`mock_close.json` s prodloužením
+a pozdním vyrovnáním, `mock_dominance.json` s rozdílem nad prahy). Testy používají jen je.
 
 ## Struktura
 
