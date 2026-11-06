@@ -16,12 +16,33 @@ python -m venv .venv
 pip install -e ".[dev]"
 copy .env.example .env          # doplň ANTHROPIC_API_KEY
 
-# náhled sestaveného promptu bez volání modelu
-di run match_preview --input agents/match_preview/examples/sample_input.json --dry-run
+# náhled sestaveného promptu bez volání modelu (mock data)
+di run match_preview --input agents/match_preview/examples/mock_alert.json --dry-run
 
-# ostrý běh
-di run match_preview --input agents/match_preview/examples/sample_input.json --out outputs/preview.md
+# ostrý běh nad jedním souborem
+di run match_preview --input agents/match_preview/examples/mock_alert.json --out outputs/mock_alert.md
 ```
+
+## Reálná data
+
+Reálné vstupy (`*.json` nebo `*.txt` z Hockey Logic chatbota) patří do `data/raw/`, které je gitignorované.
+Celou složku vyhodnotíš jedním příkazem, výstupy se uloží jako `outputs/<název>.md`:
+
+```bash
+di run-dir match_preview --dry-run          # jen validace a sestavení promptů, bez volání modelu
+di run-dir match_preview                    # ostrý běh nad data/raw, existující výstupy přeskočí
+di run-dir match_preview --overwrite        # přepíše existující výstupy
+di run-dir match_preview --input-dir D:\jina\slozka --out-dir D:\vystupy
+```
+
+Chyba v jednom souboru dávku nezastaví, na konci je souhrn. Testy nad `data/raw` se spustí jen
+tehdy, když tam nějaká data jsou.
+
+## Mock data
+
+Vymyšlená data ve stejném formátu generuje `python scripts/make_mock_data.py` do
+`agents/match_preview/examples/` (`mock_alert.json` se spuštěným upozorněním na tabulku,
+`mock_no_alert.json` bez něj). Testy používají jen je.
 
 ## Struktura
 
@@ -40,4 +61,4 @@ docs/        poznámky k designu
 
 1. Zkopíruj `agents/match_preview/` a přejmenuj.
 2. Uprav `agent.yaml`, `prompts/system.md`, `schemas/input.schema.json`.
-3. Přidej vzorový vstup do `examples/`.
+3. Přidej mock vstup do `examples/` (nikdy reálná data, ta patří do `data/raw/`).

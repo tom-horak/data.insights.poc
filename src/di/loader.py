@@ -83,8 +83,8 @@ def build_prompt(agent: Agent, data: dict) -> tuple[str, str]:
     variables = {
         "league_teams": agent.config.get("league", {}).get("teams", ""),
         "last_n_games": agent.config.get("form", {}).get("last_n_games", 5),
-        "team_name": data["team_overview"]["team"],
-        "opponent_name": data["opp_overview"]["team"],
+        "team_name": data["team_name"],
+        "opponent_name": data["opp_name"],
         "facts": facts,
     }
     system = render(agent.system_prompt, variables) + "\n\n---\n" + render(agent.output_template, variables)

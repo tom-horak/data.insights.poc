@@ -1,5 +1,5 @@
 name: match_preview
-version: 0.1.0
+version: 0.2.0
 description: Předzápasový skautský přehled (CZ) z JSON dat obou týmů a ligové tabulky.
 model: claude-sonnet-5-5
 max_tokens: 6000

@@ -4,7 +4,10 @@ Tvým úkolem je zpracovat data, analyzovat veškeré metriky týmů, ligovou ta
 
 ## Schéma vstupu
 
-Data obsahují makro metriky `team_overview` / `opp_overview`, tabulku `league_standings` pro {{league_teams}} týmů a symetrické bloky `team_games` / `opp_games` se statistikami 5v5, speciálními týmy, brankáři a formacemi.
+- `team_name` / `opp_name`: náš tým a soupeř.
+- `team_overview` / `opp_overview`: makro metriky ve tvaru `{metric, metricsValue, order}`, kde `order` je pořadí v lize ({{league_teams}} týmů, 1 = nejlepší). Metriky: `gf60`, `ga60`, `sh_ga60` (góly proti v oslabení), `pp_gf60` (góly v přesilovce), `gsax` (góly ušetřené brankářem oproti očekávání), `form` (pořadí formy).
+- `league_standings`: tabulka {{league_teams}} týmů (`order`, `PTS`, `GP`, `GF`, `GA`).
+- `team_games` / `opp_games`: posledních {{last_n_games}} zápasů od nejnovějšího; každý obsahuje `matchInfo`, `stats` (`C` = Corsi, `xG`, `expectedWin`), `statsSpecialTeams`, `goalkeepers` (`GSAx`), `forwards` a `defencemen` (formace a dvojice s `GF`, `GA`, `xGF%`).
 
 ## Kritické pravidlo pro práci s metrikami
 
