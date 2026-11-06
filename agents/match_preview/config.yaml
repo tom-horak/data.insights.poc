@@ -1,0 +1,9 @@
+league:
+  teams: 14
+  top4_cutoff: 4        # přímé čtvrtfinále
+  playoff_cutoff: 12    # předkolo play-off (TOP 12)
+  last_place: 14        # sestupové pásmo
+  critical_pts_gap: 3   # práh: rozdíl < 3 body => kritické upozornění
+
+form:
+  last_n_games: 5

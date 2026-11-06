@@ -1,0 +1,31 @@
+[project]
+name = "data-insights-poc"
+version = "0.1.0"
+description = "Prototypy AI agentů pro zpracování a analýzu dat (Data Insights)"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40",
+    "pyyaml>=6.0",
+    "jsonschema>=4.20",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+di = "di.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100

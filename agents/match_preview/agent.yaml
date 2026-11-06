@@ -1,0 +1,20 @@
+name: match_preview
+version: 0.1.0
+description: Předzápasový skautský přehled (CZ) z JSON dat obou týmů a ligové tabulky.
+model: claude-sonnet-5-5
+max_tokens: 6000
+temperature: 0.3
+language: cs
+
+prompts:
+  system: prompts/system.md
+  output_template: prompts/output_template.cs.md
+
+input_schema: schemas/input.schema.json
+
+# deterministické předzpracování; výsledek jde do promptu jako {{facts}}
+preprocessors:
+  - skill: standings-alert
+    module: standings_alert
+    function: compute
+    result_key: standings_alert

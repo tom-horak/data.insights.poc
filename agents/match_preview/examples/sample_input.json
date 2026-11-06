@@ -1,0 +1,22 @@
+{
+  "team_overview": { "team": "Tým A", "gf60": 2.02 },
+  "opp_overview": { "team": "Tým B", "gf60": 2.4 },
+  "league_standings": [
+    { "team": "Tým 1", "rank": 1, "gp": 30, "pts": 70, "gf": 100, "ga": 60 },
+    { "team": "Tým 2", "rank": 2, "gp": 30, "pts": 66, "gf": 95, "ga": 62 },
+    { "team": "Tým 3", "rank": 3, "gp": 30, "pts": 60, "gf": 90, "ga": 65 },
+    { "team": "Tým A", "rank": 4, "gp": 30, "pts": 55, "gf": 85, "ga": 70 },
+    { "team": "Tým B", "rank": 5, "gp": 30, "pts": 54, "gf": 80, "ga": 72 },
+    { "team": "Tým 6", "rank": 6, "gp": 30, "pts": 50, "gf": 78, "ga": 74 },
+    { "team": "Tým 7", "rank": 7, "gp": 30, "pts": 47, "gf": 76, "ga": 75 },
+    { "team": "Tým 8", "rank": 8, "gp": 30, "pts": 44, "gf": 74, "ga": 76 },
+    { "team": "Tým 9", "rank": 9, "gp": 30, "pts": 41, "gf": 72, "ga": 78 },
+    { "team": "Tým 10", "rank": 10, "gp": 30, "pts": 38, "gf": 70, "ga": 80 },
+    { "team": "Tým 11", "rank": 11, "gp": 30, "pts": 35, "gf": 68, "ga": 82 },
+    { "team": "Tým 12", "rank": 12, "gp": 30, "pts": 30, "gf": 66, "ga": 84 },
+    { "team": "Tým 13", "rank": 13, "gp": 30, "pts": 25, "gf": 60, "ga": 90 },
+    { "team": "Tým 14", "rank": 14, "gp": 30, "pts": 18, "gf": 55, "ga": 95 }
+  ],
+  "team_games": [],
+  "opp_games": []
+}

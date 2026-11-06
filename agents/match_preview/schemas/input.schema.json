@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "match_preview input",
+  "description": "ZÁSTUPNÉ SCHÉMA: upřesni podle reálného JSONu. Vyžaduje jen pole, ze kterých čerpá runtime.",
+  "type": "object",
+  "required": ["team_overview", "opp_overview", "league_standings", "team_games", "opp_games"],
+  "properties": {
+    "team_overview": {
+      "type": "object",
+      "required": ["team"],
+      "properties": { "team": { "type": "string" } }
+    },
+    "opp_overview": {
+      "type": "object",
+      "required": ["team"],
+      "properties": { "team": { "type": "string" } }
+    },
+    "league_standings": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["team", "rank", "pts"],
+        "properties": {
+          "team": { "type": "string" },
+          "rank": { "type": "integer", "minimum": 1 },
+          "gp": { "type": "integer" },
+          "pts": { "type": "number" },
+          "gf": { "type": "integer" },
+          "ga": { "type": "integer" }
+        }
+      }
+    },
+    "team_games": { "type": "array" },
+    "opp_games": { "type": "array" }
+  }
+}
