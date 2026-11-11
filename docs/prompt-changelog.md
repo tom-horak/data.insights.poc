@@ -1,5 +1,11 @@
 # Changelog promptů
 
+## match_analysis_hc 0.1.0
+- Nový agent: stejný výstup jako `match_analysis`, ale vstupem je surový export zápasu z hokej.COACH.
+- Skill `hokejcoach-adapter` (`input_adapter` v `agent.yaml`) převede data na vstup ve tvaru `match_analysis`; do promptu jde jen převedený vstup, ne surová data.
+- Prompty jsou kopií `match_analysis` 0.1.0. V glosáři se upřesnilo, že `cf` zahrnuje všechny pokusy včetně zblokovaných a že `hd.cf` = xG nad `{{hd_xg_min}}` (`config.adapter.hd_xg_min`, 0.138).
+- `match_date` je nepovinné (hokej.COACH datum zápasu nedodává).
+
 ## match_analysis 0.1.0
 - Nový agent z `di_match_analysis.md` (dvojjazyčný EN + CZ pozápasový souhrn a 3 klíčové faktory).
 - Prahy (rozdíl `cf` ≤ 5, „dominance" při `cf` > 20 nebo `xgf` > 1.5) a limity slov jsou v `config.yaml` a doplňují se do promptu.

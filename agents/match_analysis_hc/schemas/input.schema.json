@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "match_analysis_hc input (po převodu adaptérem)",
+  "description": "Výstup skillu hokejcoach-adapter: stejný tvar jako vstup match_analysis, match_date je nepovinné. Metriky mají tvar {metric, <home_team>: x, <away_team>: y}.",
+  "type": "object",
+  "required": ["home_team", "away_team", "final_score", "match_goals", "metrics_5_on_5", "metrics_power_play"],
+  "$defs": {
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["metric"],
+        "properties": { "metric": { "type": "string" } }
+      }
+    }
+  },
+  "properties": {
+    "match_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "home_team": { "type": "string", "minLength": 1 },
+    "away_team": { "type": "string", "minLength": 1 },
+    "final_score": {
+      "type": "string",
+      "description": "např. 1:3, 3:2n (po prodloužení), 3:4p (po nájezdech)",
+      "pattern": "^\\s*\\d+\\s*:\\s*\\d+\\s*[A-Za-z]*\\s*$"
+    },
+    "match_goals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["time", "team"],
+        "properties": {
+          "time": { "type": "string", "pattern": "^\\d+:\\d{2}$" },
+          "team": { "type": "string" },
+          "player_name": { "type": "string" }
+        }
+      }
+    },
+    "metrics_5_on_5": { "$ref": "#/$defs/metrics" },
+    "metrics_power_play": { "$ref": "#/$defs/metrics" }
+  }
+}

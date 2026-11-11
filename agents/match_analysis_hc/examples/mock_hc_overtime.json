@@ -1,0 +1,930 @@
+{
+  "id": "9002",
+  "league": "Mock liga 2026/27",
+  "season": "2026",
+  "round": "1",
+  "length": 3600,
+  "homeTeam": {
+    "id": "1",
+    "name": "HC Gamma",
+    "shortName": "Gamma",
+    "score": 3,
+    "roster": [
+      {
+        "id": "g0",
+        "name": "Brankář",
+        "surname": "G",
+        "position": "goalkeeper"
+      },
+      {
+        "id": "g1",
+        "name": "Hráč",
+        "surname": "G1",
+        "position": "forward"
+      },
+      {
+        "id": "g2",
+        "name": "Hráč",
+        "surname": "G2",
+        "position": "forward"
+      },
+      {
+        "id": "g3",
+        "name": "Hráč",
+        "surname": "G3",
+        "position": "forward"
+      },
+      {
+        "id": "g4",
+        "name": "Hráč",
+        "surname": "G4",
+        "position": "forward"
+      },
+      {
+        "id": "g5",
+        "name": "Hráč",
+        "surname": "G5",
+        "position": "backward"
+      },
+      {
+        "id": "g6",
+        "name": "Hráč",
+        "surname": "G6",
+        "position": "backward"
+      }
+    ],
+    "gameState": [
+      {
+        "start": 0,
+        "end": 1000,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 1000,
+        "end": 1120,
+        "state": "5:4",
+        "type": "PP",
+        "hasGoalie": true
+      },
+      {
+        "start": 1120,
+        "end": 3600,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 3600,
+        "end": 3900,
+        "state": "3:3",
+        "type": "RG",
+        "hasGoalie": true
+      }
+    ]
+  },
+  "awayTeam": {
+    "id": "2",
+    "name": "HC Delta",
+    "shortName": "Delta",
+    "score": 2,
+    "roster": [
+      {
+        "id": "d0",
+        "name": "Brankář",
+        "surname": "D",
+        "position": "goalkeeper"
+      },
+      {
+        "id": "d1",
+        "name": "Hráč",
+        "surname": "D1",
+        "position": "forward"
+      },
+      {
+        "id": "d2",
+        "name": "Hráč",
+        "surname": "D2",
+        "position": "forward"
+      },
+      {
+        "id": "d3",
+        "name": "Hráč",
+        "surname": "D3",
+        "position": "forward"
+      },
+      {
+        "id": "d4",
+        "name": "Hráč",
+        "surname": "D4",
+        "position": "forward"
+      },
+      {
+        "id": "d5",
+        "name": "Hráč",
+        "surname": "D5",
+        "position": "backward"
+      },
+      {
+        "id": "d6",
+        "name": "Hráč",
+        "surname": "D6",
+        "position": "backward"
+      }
+    ],
+    "gameState": [
+      {
+        "start": 0,
+        "end": 1000,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 1000,
+        "end": 1120,
+        "state": "4:5",
+        "type": "SH",
+        "hasGoalie": true
+      },
+      {
+        "start": 1120,
+        "end": 3600,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 3600,
+        "end": 3900,
+        "state": "3:3",
+        "type": "RG",
+        "hasGoalie": true
+      }
+    ]
+  },
+  "shot": [
+    {
+      "playerId": "g4",
+      "time": 2,
+      "result": "saved",
+      "xG": 0.1183,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d2",
+      "time": 25,
+      "result": "saved",
+      "xG": 0.0103,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g4",
+      "time": 32,
+      "result": "post",
+      "xG": 0.0084,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 40,
+      "result": "post",
+      "xG": 0.0762,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d2",
+      "time": 42,
+      "result": "deflected",
+      "xG": 0.0404,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d4",
+      "time": 71,
+      "result": "missed",
+      "xG": 0.1141,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 87,
+      "result": "post",
+      "xG": 0.0892,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 100,
+      "result": "deflected",
+      "xG": 0.0108,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d6",
+      "time": 105,
+      "result": "saved",
+      "xG": 0.0457,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g4",
+      "time": 143,
+      "result": "post",
+      "xG": 0.0535,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 156,
+      "result": "saved",
+      "xG": 0.0772,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d3",
+      "time": 182,
+      "result": "saved",
+      "xG": 0.0718,
+      "actionType": "forecheck",
+      "oddManRush": true,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d1",
+      "time": 183,
+      "result": "deflected",
+      "xG": 0.0897,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d2",
+      "time": 204,
+      "result": "deflected",
+      "xG": 0.0989,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 218,
+      "result": "saved",
+      "xG": 0.0632,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 234,
+      "result": "missed",
+      "xG": 0.0995,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 235,
+      "result": "post",
+      "xG": 0.0727,
+      "actionType": "rush",
+      "oddManRush": true,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g6",
+      "time": 250,
+      "result": "post",
+      "xG": 0.0238,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 278,
+      "result": "post",
+      "xG": 0.0374,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g6",
+      "time": 281,
+      "result": "saved",
+      "xG": 0.0332,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g3",
+      "time": 291,
+      "result": "saved",
+      "xG": 0.0231,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d5",
+      "time": 308,
+      "result": "post",
+      "xG": 0.0517,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d5",
+      "time": 316,
+      "result": "missed",
+      "xG": 0.0817,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 389,
+      "result": "saved",
+      "xG": 0.037,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 416,
+      "result": "saved",
+      "xG": 0.0608,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g6",
+      "time": 486,
+      "result": "saved",
+      "xG": 0.1139,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 488,
+      "result": "saved",
+      "xG": 0.0628,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g6",
+      "time": 497,
+      "result": "missed",
+      "xG": 0.0296,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 500,
+      "result": "missed",
+      "xG": 0.0339,
+      "actionType": "rush",
+      "oddManRush": true,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 500,
+      "result": "goal",
+      "xG": 0.25,
+      "actionType": "rush",
+      "oddManRush": true,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 565,
+      "result": "deflected",
+      "xG": 0.0387,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 609,
+      "result": "saved",
+      "xG": 0.0128,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d5",
+      "time": 621,
+      "result": "deflected",
+      "xG": 0.0803,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d3",
+      "time": 656,
+      "result": "missed",
+      "xG": 0.0636,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d1",
+      "time": 675,
+      "result": "saved",
+      "xG": 0.0272,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d1",
+      "time": 725,
+      "result": "missed",
+      "xG": 0.0551,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 733,
+      "result": "post",
+      "xG": 0.0797,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g4",
+      "time": 745,
+      "result": "saved",
+      "xG": 0.044,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g3",
+      "time": 780,
+      "result": "saved",
+      "xG": 0.0236,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d4",
+      "time": 812,
+      "result": "post",
+      "xG": 0.1086,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 897,
+      "result": "saved",
+      "xG": 0.0876,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g6",
+      "time": 906,
+      "result": "saved",
+      "xG": 0.0668,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d6",
+      "time": 925,
+      "result": "saved",
+      "xG": 0.0221,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 927,
+      "result": "saved",
+      "xG": 0.0086,
+      "actionType": "forecheck",
+      "oddManRush": true,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g3",
+      "time": 954,
+      "result": "post",
+      "xG": 0.0813,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g6",
+      "time": 1061,
+      "result": "saved",
+      "xG": 0.0568,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g6",
+      "time": 1067,
+      "result": "saved",
+      "xG": 0.0584,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g3",
+      "time": 1080,
+      "result": "goal",
+      "xG": 0.18,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g4",
+      "time": 1081,
+      "result": "deflected",
+      "xG": 0.0712,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g6",
+      "time": 1089,
+      "result": "saved",
+      "xG": 0.0056,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 1103,
+      "result": "deflected",
+      "xG": 0.0584,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 1105,
+      "result": "deflected",
+      "xG": 0.0877,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d1",
+      "time": 1134,
+      "result": "missed",
+      "xG": 0.0434,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g3",
+      "time": 1146,
+      "result": "post",
+      "xG": 0.0923,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d2",
+      "time": 1400,
+      "result": "goal",
+      "xG": 0.09,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 1404,
+      "result": "post",
+      "xG": 0.0103,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g3",
+      "time": 1417,
+      "result": "deflected",
+      "xG": 0.0061,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 1578,
+      "result": "deflected",
+      "xG": 0.1118,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d6",
+      "time": 1753,
+      "result": "post",
+      "xG": 0.1115,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d3",
+      "time": 1772,
+      "result": "saved",
+      "xG": 0.0955,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d2",
+      "time": 1905,
+      "result": "post",
+      "xG": 0.0534,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 1943,
+      "result": "saved",
+      "xG": 0.087,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 2001,
+      "result": "missed",
+      "xG": 0.1151,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 2204,
+      "result": "deflected",
+      "xG": 0.0211,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g6",
+      "time": 2213,
+      "result": "saved",
+      "xG": 0.0857,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d6",
+      "time": 2404,
+      "result": "missed",
+      "xG": 0.0552,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 2406,
+      "result": "missed",
+      "xG": 0.0324,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d6",
+      "time": 2492,
+      "result": "post",
+      "xG": 0.0157,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g3",
+      "time": 2528,
+      "result": "saved",
+      "xG": 0.0744,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g4",
+      "time": 2602,
+      "result": "post",
+      "xG": 0.0302,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g4",
+      "time": 2787,
+      "result": "saved",
+      "xG": 0.0269,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g3",
+      "time": 2900,
+      "result": "saved",
+      "xG": 0.0232,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d6",
+      "time": 2929,
+      "result": "saved",
+      "xG": 0.0684,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 2969,
+      "result": "deflected",
+      "xG": 0.0189,
+      "actionType": "longAttack",
+      "oddManRush": true,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "d4",
+      "time": 3000,
+      "result": "goal",
+      "xG": 0.06,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g4",
+      "time": 3032,
+      "result": "deflected",
+      "xG": 0.1043,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g5",
+      "time": 3037,
+      "result": "deflected",
+      "xG": 0.0658,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 3199,
+      "result": "post",
+      "xG": 0.11,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g4",
+      "time": 3396,
+      "result": "missed",
+      "xG": 0.0811,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g1",
+      "time": 3492,
+      "result": "saved",
+      "xG": 0.0896,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "g2",
+      "time": 3725,
+      "result": "goal",
+      "xG": 0.3,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    }
+  ],
+  "goal": [
+    {
+      "playerId": "g1",
+      "time": 501,
+      "assist1": null,
+      "assist2": null
+    },
+    {
+      "playerId": "g3",
+      "time": 1081,
+      "assist1": null,
+      "assist2": null
+    },
+    {
+      "playerId": "d2",
+      "time": 1401,
+      "assist1": null,
+      "assist2": null
+    },
+    {
+      "playerId": "d4",
+      "time": 3001,
+      "assist1": null,
+      "assist2": null
+    },
+    {
+      "playerId": "g2",
+      "time": 3725,
+      "assist1": null,
+      "assist2": null
+    }
+  ]
+}

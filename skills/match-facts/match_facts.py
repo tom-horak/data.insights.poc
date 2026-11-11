@@ -145,7 +145,7 @@ def compute(data: dict, config: dict) -> dict:
 
     return {
         "match": {
-            "date": data["match_date"],
+            "date": data.get("match_date"),
             "home_team": home,
             "away_team": away,
             "final_score": data["final_score"],
