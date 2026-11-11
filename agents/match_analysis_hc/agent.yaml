@@ -1,0 +1,38 @@
+name: match_analysis_hc
+version: 0.1.0
+description: Dvojjazyčná (EN + CZ) pozápasová analýza z dat hokej.COACH (5v5, přesilovky, průběh gólů); výstup stejný jako match_analysis.
+model: claude-sonnet-5-5
+max_tokens: 2000
+temperature: 0.2
+language: en+cs
+
+prompts:
+  system: prompts/system.md
+  output_template: prompts/output_template.md
+
+raw_input_schema: schemas/raw_input.schema.json
+input_schema: schemas/input.schema.json
+
+input_adapter:
+  skill: hokejcoach-adapter
+  module: hokejcoach_adapter
+  function: to_match_input
+
+variables:
+  home_team: data.home_team
+  away_team: data.away_team
+  cf_equal_max: config.thresholds.cf_equal_max
+  dominance_cf_min: config.thresholds.dominance_cf_min
+  dominance_xgf_min: config.thresholds.dominance_xgf_min
+  hd_xg_min: config.adapter.hd_xg_min
+  summary_max_words: config.output.summary_max_words
+  factor_max_words: config.output.factor_max_words
+  factors_count: config.output.factors_count
+
+user_prefix: "### INPUT DATA JSON:\n"
+
+preprocessors:
+  - skill: match-facts
+    module: match_facts
+    function: compute
+    result_key: match_facts

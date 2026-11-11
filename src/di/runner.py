@@ -9,15 +9,14 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from .loader import Agent, build_prompt, load_agent
-from .validate import validate_input
+from .loader import Agent, build_prompt, load_agent, prepare_input
 
 DEFAULT_PATTERNS = ("*.json", "*.txt")
 
 
 def _run_one(agent: Agent, input_path: Path, dry_run: bool, client=None) -> str:
-    data = json.loads(Path(input_path).read_text(encoding="utf-8"))
-    validate_input(data, agent.schema)
+    raw = json.loads(Path(input_path).read_text(encoding="utf-8"))
+    data = prepare_input(agent, raw)
     system, user = build_prompt(agent, data)
 
     if dry_run:

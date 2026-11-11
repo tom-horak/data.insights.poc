@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "match_analysis_hc raw input (hokej.COACH)",
+  "description": "Surový export zápasu z hokej.COACH. Kontrolují se jen pole, která používá skill hokejcoach-adapter; ostatní (směny, buly, vstupy do pásma, momentum ...) se ignorují.",
+  "type": "object",
+  "required": ["homeTeam", "awayTeam", "shot", "goal"],
+  "$defs": {
+    "gameState": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["start", "end", "state", "type", "hasGoalie"],
+        "properties": {
+          "start": { "type": "number" },
+          "end": { "type": "number" },
+          "state": { "type": "string", "pattern": "^\\d:\\d$" },
+          "type": { "type": "string" },
+          "hasGoalie": { "type": "boolean" }
+        }
+      }
+    },
+    "team": {
+      "type": "object",
+      "required": ["name", "score", "roster", "gameState"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "shortName": { "type": "string" },
+        "score": { "type": "integer", "minimum": 0 },
+        "roster": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id"],
+            "properties": {
+              "id": { "type": ["string", "integer"] },
+              "name": { "type": ["string", "null"] },
+              "surname": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "gameState": { "$ref": "#/$defs/gameState" }
+      }
+    }
+  },
+  "properties": {
+    "id": { "type": ["string", "integer"] },
+    "length": { "type": "number" },
+    "homeTeam": { "$ref": "#/$defs/team" },
+    "awayTeam": { "$ref": "#/$defs/team" },
+    "shot": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["playerId", "time", "result", "xG"],
+        "properties": {
+          "playerId": { "type": ["string", "integer"] },
+          "time": { "type": "number" },
+          "result": { "enum": ["saved", "missed", "post", "deflected", "goal"] },
+          "xG": { "type": ["number", "null"] },
+          "actionType": { "type": ["string", "null"] },
+          "oddManRush": { "type": ["boolean", "null"] }
+        }
+      }
+    },
+    "goal": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["playerId", "time"],
+        "properties": {
+          "playerId": { "type": ["string", "integer"] },
+          "time": { "type": "number" }
+        }
+      }
+    }
+  }
+}

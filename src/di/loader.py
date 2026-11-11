@@ -11,6 +11,7 @@ from pathlib import Path
 import yaml
 
 from . import AGENTS_DIR, SKILLS_DIR
+from .validate import validate_input
 
 
 @dataclass
@@ -22,6 +23,8 @@ class Agent:
     output_template: str
     schema: dict | None
     preprocessors: list[dict] = field(default_factory=list)
+    raw_schema: dict | None = None
+    input_adapter: dict | None = None
 
     @property
     def name(self) -> str:
@@ -39,6 +42,9 @@ def load_agent(name: str) -> Agent:
     schema = None
     if spec.get("input_schema"):
         schema = json.loads((path / spec["input_schema"]).read_text(encoding="utf-8"))
+    raw_schema = None
+    if spec.get("raw_input_schema"):
+        raw_schema = json.loads((path / spec["raw_input_schema"]).read_text(encoding="utf-8"))
     return Agent(
         path=path,
         spec=spec,
@@ -47,6 +53,8 @@ def load_agent(name: str) -> Agent:
         output_template=(path / prompts["output_template"]).read_text(encoding="utf-8"),
         schema=schema,
         preprocessors=spec.get("preprocessors", []),
+        raw_schema=raw_schema,
+        input_adapter=spec.get("input_adapter"),
     )
 
 
@@ -56,6 +64,22 @@ def _load_skill_function(skill: str, module: str, function: str):
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return getattr(mod, function)
+
+
+def prepare_input(agent: Agent, raw: dict) -> dict:
+    """Zvaliduje vstup a případně ho převede adaptérem na vstup agenta.
+
+    Bez `input_adapter` jen validuje proti `input_schema`. S adaptérem: validace surových dat
+    proti `raw_input_schema` -> převod funkcí skillu -> validace výsledku proti `input_schema`.
+    """
+    if not agent.input_adapter:
+        validate_input(raw, agent.schema)
+        return raw
+    validate_input(raw, agent.raw_schema)
+    a = agent.input_adapter
+    data = _load_skill_function(a["skill"], a["module"], a["function"])(raw, agent.config)
+    validate_input(data, agent.schema)
+    return data
 
 
 def run_preprocessors(agent: Agent, data: dict) -> dict:

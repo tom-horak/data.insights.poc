@@ -1,0 +1,352 @@
+{
+  "id": "9001",
+  "league": "Mock liga 2026/27",
+  "season": "2026",
+  "round": "1",
+  "length": 3600,
+  "homeTeam": {
+    "id": "1",
+    "name": "HC Alfa",
+    "shortName": "Alfa",
+    "score": 2,
+    "roster": [
+      {
+        "id": "a0",
+        "name": "Brankář",
+        "surname": "A",
+        "position": "goalkeeper"
+      },
+      {
+        "id": "a1",
+        "name": "Hráč",
+        "surname": "A1",
+        "position": "forward"
+      },
+      {
+        "id": "a2",
+        "name": "Hráč",
+        "surname": "A2",
+        "position": "forward"
+      },
+      {
+        "id": "a3",
+        "name": "Hráč",
+        "surname": "A3",
+        "position": "forward"
+      },
+      {
+        "id": "a4",
+        "name": "Hráč",
+        "surname": "A4",
+        "position": "forward"
+      },
+      {
+        "id": "a5",
+        "name": "Hráč",
+        "surname": "A5",
+        "position": "backward"
+      },
+      {
+        "id": "a6",
+        "name": "Hráč",
+        "surname": "A6",
+        "position": "backward"
+      }
+    ],
+    "gameState": [
+      {
+        "start": 0,
+        "end": 600,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 600,
+        "end": 650,
+        "state": "5:4",
+        "type": "PP",
+        "hasGoalie": true
+      },
+      {
+        "start": 650,
+        "end": 1800,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 1800,
+        "end": 1920,
+        "state": "4:5",
+        "type": "SH",
+        "hasGoalie": true
+      },
+      {
+        "start": 1920,
+        "end": 3540,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 3540,
+        "end": 3600,
+        "state": "5:6",
+        "type": "WG",
+        "hasGoalie": true
+      }
+    ]
+  },
+  "awayTeam": {
+    "id": "2",
+    "name": "HC Beta",
+    "shortName": "Beta",
+    "score": 1,
+    "roster": [
+      {
+        "id": "b0",
+        "name": "Brankář",
+        "surname": "B",
+        "position": "goalkeeper"
+      },
+      {
+        "id": "b1",
+        "name": "Hráč",
+        "surname": "B1",
+        "position": "forward"
+      },
+      {
+        "id": "b2",
+        "name": "Hráč",
+        "surname": "B2",
+        "position": "forward"
+      },
+      {
+        "id": "b3",
+        "name": "Hráč",
+        "surname": "B3",
+        "position": "forward"
+      },
+      {
+        "id": "b4",
+        "name": "Hráč",
+        "surname": "B4",
+        "position": "forward"
+      },
+      {
+        "id": "b5",
+        "name": "Hráč",
+        "surname": "B5",
+        "position": "backward"
+      },
+      {
+        "id": "b6",
+        "name": "Hráč",
+        "surname": "B6",
+        "position": "backward"
+      }
+    ],
+    "gameState": [
+      {
+        "start": 0,
+        "end": 600,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 600,
+        "end": 650,
+        "state": "4:5",
+        "type": "SH",
+        "hasGoalie": true
+      },
+      {
+        "start": 650,
+        "end": 1800,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 1800,
+        "end": 1920,
+        "state": "5:4",
+        "type": "PP",
+        "hasGoalie": true
+      },
+      {
+        "start": 1920,
+        "end": 3540,
+        "state": "5:5",
+        "type": "RG",
+        "hasGoalie": true
+      },
+      {
+        "start": 3540,
+        "end": 3600,
+        "state": "6:5",
+        "type": "WG",
+        "hasGoalie": false
+      }
+    ]
+  },
+  "shot": [
+    {
+      "playerId": "a1",
+      "time": 120,
+      "result": "saved",
+      "xG": 0.1374,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "a2",
+      "time": 300,
+      "result": "missed",
+      "xG": 0.1413,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "b1",
+      "time": 420,
+      "result": "deflected",
+      "xG": 0.02,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "a3",
+      "time": 620,
+      "result": "saved",
+      "xG": 0.08,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "a1",
+      "time": 649,
+      "result": "goal",
+      "xG": 0.21,
+      "actionType": "longAttack",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "b2",
+      "time": 900,
+      "result": "saved",
+      "xG": 0.05,
+      "actionType": "rush",
+      "oddManRush": true,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "b3",
+      "time": 1500,
+      "result": "goal",
+      "xG": 0.16,
+      "actionType": "rush",
+      "oddManRush": true,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "a4",
+      "time": 1850,
+      "result": "deflected",
+      "xG": 0.01,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "b4",
+      "time": 1860,
+      "result": "saved",
+      "xG": 0.07,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "b5",
+      "time": 1900,
+      "result": "post",
+      "xG": 0.15,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "a5",
+      "time": 2400,
+      "result": "saved",
+      "xG": 0.03,
+      "actionType": "afterFO",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "b1",
+      "time": 2600,
+      "result": "missed",
+      "xG": 0.04,
+      "actionType": "forecheck",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "a2",
+      "time": 3300,
+      "result": "goal",
+      "xG": 0.3,
+      "actionType": "rush",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "b2",
+      "time": 3560,
+      "result": "saved",
+      "xG": 0.05,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    },
+    {
+      "playerId": "a6",
+      "time": 3580,
+      "result": "missed",
+      "xG": 0.5,
+      "actionType": "none",
+      "oddManRush": false,
+      "penaltyShot": false
+    }
+  ],
+  "goal": [
+    {
+      "playerId": "a1",
+      "time": 650,
+      "assist1": "a3",
+      "assist2": null
+    },
+    {
+      "playerId": "b3",
+      "time": 1501,
+      "assist1": "b2",
+      "assist2": null
+    },
+    {
+      "playerId": "a2",
+      "time": 3301,
+      "assist1": null,
+      "assist2": null
+    }
+  ]
+}
